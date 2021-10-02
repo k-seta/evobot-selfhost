@@ -24,4 +24,9 @@ resource "google_compute_instance" "default" {
     network = "default"
     access_config {}
   }
+
+  metadata = {
+    discord-bot-token = var.DISCORD_BOT_TOKEN
+  }
+  metadata_startup_script = file("startup.sh")
 }
