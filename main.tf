@@ -1,5 +1,5 @@
 provider "google" {
-  project = " fredboat-selfhost-327804"
+  project = "fredboat-selfhost-327804"
   region  = "us-east1"
   zone    = "us-east1-b"
 }
