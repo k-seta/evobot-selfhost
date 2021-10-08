@@ -26,7 +26,8 @@ resource "google_compute_instance" "default" {
   }
 
   metadata = {
-    discord-bot-token = var.DISCORD_BOT_TOKEN
+    discord-bot-token = var.DISCORD_BOT_TOKEN,
+    youtube-api-key = var.YOUTUBE_API_KEY
   }
   metadata_startup_script = file("startup.sh")
 }
