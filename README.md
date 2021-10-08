@@ -1,6 +1,6 @@
 # Automuteus Selfhost on GCP
 ## Description
-GCP の無料枠内での Evobot のセルフホスティングを Terraform + GitHub Actions で実現します。
+GCP の無料枠内での [Evobot](https://github.com/eritislami/evobot) のセルフホスティングを Terraform + GitHub Actions で実現します。
 
 ## Preparation
 1. このリポジトリを `fork` します。
