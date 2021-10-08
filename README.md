@@ -1,13 +1,14 @@
 # Automuteus Selfhost on GCP
 ## Description
-GCP の無料枠内での FredBoat のセルフホスティングを Terraform + GitHub Actions で実現します。
+GCP の無料枠内での Evobot のセルフホスティングを Terraform + GitHub Actions で実現します。
 
 ## Preparation
 1. このリポジトリを `fork` します。
 2. Google Cloud のアカウントを作成します。
 3. Service Account (Role: Editor) を作成し、 取得した `credentials.json` に記載された json を GitHub の `Settings > Secrets` に `GOOGLE_CREDENTIALS` として登録します。
 4. Discord Developer Portal で AutoMuteUs をセルフホスティングするための Bot を作成し、Bot の Token を GitHub の `Settings > Secrets` に `TF_VAR_DISCORD_BOT_TOKEN` として登録します。
-5. `tfstate` 保存用に、下記の要件を満たす無料枠の GCS を手動で作成します。
+5. Youtube Data API の API Key を GitHub の `Settings > Secrets` に `TF_VAR_YOUTUBE_API_KEY` として登録します。
+6. `tfstate` 保存用に、下記の要件を満たす無料枠の GCS を手動で作成します。
 ```
 location type: Region
 location: us-east1
